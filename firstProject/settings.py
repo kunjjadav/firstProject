@@ -30,6 +30,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+# In firstProject/settings.py
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -38,17 +39,19 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'chai',
-    'tailwind',
-    'theme',
-    'django_browser_reload',
+    'tailwind',                    
+    'theme',                       
+    'django_browser_reload',       
 ]
 
+# Add these settings:
 TAILWIND_APP_NAME = 'theme'
 
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
 
-INTERNAL_IPS = ['127.0.0.1']
-
-
+# In firstProject/settings.py
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -57,7 +60,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django_browser_reload.middleware.BrowserReloadMiddleware',
+    "django_browser_reload.middleware.BrowserReloadMiddleware", 
 ]
 
 ROOT_URLCONF = 'firstProject.urls'

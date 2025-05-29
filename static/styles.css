@@ -1,3 +1,18 @@
-*{
-    background-color: rgb(137, 137, 137);
+/* In static/styles.css - Replace ALL content with: */
+/* Custom CSS styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+.nav-bar-main {
+    background-color: white;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Add your custom styles here */
